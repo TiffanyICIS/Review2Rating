@@ -1,0 +1,3 @@
+/.venv
+/.vscode
+/model_data/best_model_CEloss.pt

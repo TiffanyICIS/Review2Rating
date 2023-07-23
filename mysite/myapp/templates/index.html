@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Model Prediction Test</title>
+    </head>
+    <body>
+        <form method="post" action="{% url 'prediction' %}">
+            <label for="user_input">Enter your film review:</label>
+            <input type="text" name="user_input" id="user_input" required>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
