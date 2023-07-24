@@ -1,3 +1,5 @@
 /.venv
 /.vscode
 /model_data/best_model_CEloss.pt
+/mysite/myapp/__pycache__/
+/mysite/myapp/migrations/__pycache__/

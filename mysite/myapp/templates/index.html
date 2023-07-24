@@ -5,8 +5,9 @@
     </head>
     <body>
         <form method="post" action="{% url 'prediction' %}">
+            {% csrf_token %}
             <label for="user_input">Enter your film review:</label>
-            <input type="text" name="user_input" id="user_input" required>
+            <textarea name="user_input" id="user_input" rows=10 cols=40 required></textarea>
             <input type="submit" value="Submit">
         </form>
     </body>
