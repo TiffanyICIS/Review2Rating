@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 from transformers import AutoTokenizer, AutoModel
 import numpy as np
+from mysite.settings import BASE_DIR
 
 attributes = ['Rating_1', 'Rating_2', 'Rating_3', 'Rating_4', 'Rating_7', 'Rating_8', 'Rating_9', 'Rating_10']
 
@@ -38,7 +39,7 @@ class ACLIMDB_Rating_Classifier(nn.Module):
     
 model = ACLIMDB_Rating_Classifier(config)
 
-checkpoint = torch.load('..\\model_data\\best_model_CEloss.pt')
+checkpoint = torch.load(BASE_DIR.parent / 'model_data' / 'best_model_CEloss.pt', map_location=torch.device('cpu'))
 
 model.load_state_dict(checkpoint['state_dict'], strict=False)
 
