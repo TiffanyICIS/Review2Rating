@@ -38,7 +38,7 @@ class ACLIMDB_Rating_Classifier(nn.Module):
     
 model = ACLIMDB_Rating_Classifier(config)
 
-checkpoint = torch.load('C:\\Users\\ilyak\\OneDrive\\Desktop\\RosatomIntership\\project\\model_data\\best_model_CEloss.pt')
+checkpoint = torch.load('..\\model_data\\best_model_CEloss.pt')
 
 model.load_state_dict(checkpoint['state_dict'], strict=False)
 
