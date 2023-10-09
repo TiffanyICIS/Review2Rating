@@ -1,4 +1,4 @@
-# RosatomInternship-23
+# Review2Rating: A Transformer Movie Review Score Predictor
 Это fine-tuned RoBERTa, которая обучена ставить оценку фильму по отзыву.
 
 САЙТ ПРОЕКТА: http://modeltesting.ru/app/
